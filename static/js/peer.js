@@ -487,7 +487,10 @@ function sendSignal(roomname_,action, message){
 // and store it and its datachannel
 // send sdp to remote peer after gathering is complete
 function createOfferer(peerUsername, localScreenSharing, remoteScreenSharing, receiver_channel_name){
-    var peer = new RTCPeerConnection();
+    var configuration = { 
+         "iceServers": [{ "url": "stun:stun.1.google.com:19302" }] 
+      }; 
+    var peer = new RTCPeerConnection(configuration);
     
     // add local user media stream tracks
     addLocalTracks(peer, localScreenSharing);
@@ -602,7 +605,10 @@ function createOfferer(peerUsername, localScreenSharing, remoteScreenSharing, re
 // and store it and its datachannel
 // send sdp to remote peer after gathering is complete
 function createAnswerer(offer, peerUsername, localScreenSharing, remoteScreenSharing, receiver_channel_name){
-    var peer = new RTCPeerConnection();
+    var configuration = { 
+         "iceServers": [{ "url": "stun:stun.1.google.com:19302" }] 
+      }; 
+    var peer = new RTCPeerConnection(configuration);
 
     addLocalTracks(peer, localScreenSharing);
 
