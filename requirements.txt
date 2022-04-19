@@ -2,15 +2,10 @@ asgiref==3.2.10
 attrs==20.3.0
 autobahn==22.3.2
 Automat==20.2.0
-brotlipy @ file:///Users/runner/miniforge3/conda-bld/brotlipy_1636012319596/work
 certifi==2021.10.8
 cffi==1.14.5
 channels==3.0.3
-charset-normalizer @ file:///home/conda/feedstock_root/build_artifacts/charset-normalizer_1644853463426/work
 cloudinary==1.29.0
-colorama @ file:///home/conda/feedstock_root/build_artifacts/colorama_1602866480661/work
-conda==4.11.0
-conda-package-handling @ file:///Users/runner/miniforge3/conda-bld/conda-package-handling_1636022092101/work
 constantly==15.1.0
 cryptography==3.4.6
 daphne==3.0.1
@@ -22,20 +17,14 @@ idna==3.1
 incremental==21.3.0
 pyasn1==0.4.8
 pyasn1-modules==0.2.8
-pycosat @ file:///Users/runner/miniforge3/conda-bld/pycosat_1636020570107/work
 pycparser==2.20
 pyOpenSSL==20.0.1
-PySocks @ file:///Users/runner/miniforge3/conda-bld/pysocks_1635862736740/work
 python-decouple==3.4
 pytz==2021.1
-requests @ file:///home/conda/feedstock_root/build_artifacts/requests_1641580202195/work
-ruamel-yaml-conda @ file:///Users/runner/miniforge3/conda-bld/ruamel_yaml_1636009262461/work
 service-identity==18.1.0
 six==1.15.0
 sqlparse==0.4.2
-tqdm @ file:///home/conda/feedstock_root/build_artifacts/tqdm_1632160078689/work
 Twisted==21.2.0
 txaio==21.2.1
-urllib3 @ file:///home/conda/feedstock_root/build_artifacts/urllib3_1641584929973/work
 whitenoise==6.0.0
 zope.interface==5.2.0
