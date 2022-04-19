@@ -487,7 +487,7 @@ function sendSignal(roomname_,action, message){
 // and store it and its datachannel
 // send sdp to remote peer after gathering is complete
 function createOfferer(peerUsername, localScreenSharing, remoteScreenSharing, receiver_channel_name){
-    var peer = new RTCPeerConnection(null);
+    var peer = new RTCPeerConnection();
     
     // add local user media stream tracks
     addLocalTracks(peer, localScreenSharing);
@@ -602,7 +602,7 @@ function createOfferer(peerUsername, localScreenSharing, remoteScreenSharing, re
 // and store it and its datachannel
 // send sdp to remote peer after gathering is complete
 function createAnswerer(offer, peerUsername, localScreenSharing, remoteScreenSharing, receiver_channel_name){
-    var peer = new RTCPeerConnection(null);
+    var peer = new RTCPeerConnection();
 
     addLocalTracks(peer, localScreenSharing);
 
