@@ -1,6 +1,6 @@
 from django.shortcuts import render
 
-# from .utils import get_turn_info
+from .utils import get_turn_info
 from django.contrib import messages
 from django.http.response import JsonResponse
 from django.shortcuts import render
@@ -24,12 +24,12 @@ def record(request):
                 "success": True,
             }
         )
-    # context = get_turn_info()
+    context = get_turn_info()
     return render(request, "chat/peer.html", context)
 
 def peer(request):
     # get numb turn info
-    # context = get_turn_info()
+    context = get_turn_info()
     print('context context context context: ', context)
 
     return render(request, 'chat/peer.html', context=context)
